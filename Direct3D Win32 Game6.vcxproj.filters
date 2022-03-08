@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>c52ebf60-2d60-48a0-b9f3-d9595b28e362</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>72c0264b-58ba-40c2-beb8-7f6f53b38447</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dds;dlg;fbx;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="StepTimer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceResources.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="ReadData.h" />
+    <ClInclude Include="modelclass.h" />
+    <ClInclude Include="RenderTexture.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="DeviceResources.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="modelclass.cpp" />
+    <ClCompile Include="RenderTexture.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="directx.ico">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="roomtexture.dds">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="space.dds">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="planet1.dds">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="turret_alt_diff_tex.dds">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="engine_diff_tex.dds">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="skybox3.dds">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="settings.manifest">
+      <Filter>Assets</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="tank.sdkmesh" />
+    <None Include="light_ps.cso" />
+    <None Include="light_vs.cso" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="chill.wav">
+      <Filter>Assets</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="light_ps.hlsl" />
+    <FxCompile Include="light_vs.hlsl" />
+  </ItemGroup>
+</Project>
